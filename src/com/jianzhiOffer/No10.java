@@ -10,6 +10,10 @@ package com.jianzhiOffer;
  * 拓展二: 在 JumpFloor() 实现, 解析思路在方法的注释中
  * 一只青蛙一次可以跳上1级台阶，也可以跳上2级……它也可以跳上n级。求该青蛙跳上一个n级的台阶总共有多少种跳法。
  *
+ * 拓展三: 在 RectCover() 实现
+ * 我们可以用2*1的小矩形横着或者竖着去覆盖更大的矩形。
+ * 请问用n个2*1的小矩形无重叠地覆盖一个2*n的大矩形，总共有多少种方法？
+ *
  * Created by 林智 on 2018/5/15.
  */
 public class No10 {
@@ -155,6 +159,21 @@ public class No10 {
 
         }*/
 
+    }
+
+    public int RectCover(int target) {
+        if (target < 3) {
+            return target;
+        }
+        int preOne = 2;
+        int preTwo = 1;
+        int res = 0;
+        for (int i = 3; i <= target; i++) {
+            res = preOne + preTwo;
+            preTwo = preOne;
+            preOne = res;
+        }
+        return res;
     }
 
     public static void main(String[] args) {
