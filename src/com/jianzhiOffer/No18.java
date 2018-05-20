@@ -89,25 +89,6 @@ public class No18 {
                 }
                 curNode = next;
             }
-            /*if (next != null && curNode.val != next.val) {
-                preNode = curNode;
-                curNode = curNode.next;
-            } else if (next != null && curNode.val == next.val){  // next != null && curNode.val == next.val
-                int val = curNode.val;
-                //ListNode deleteNode = curNode;
-                while (next != null && next.val == val) {
-                     next = next.next;
-                }
-                if (preNode != null) {
-                    preNode.next = next;
-                } else {
-                    head = next;
-                }
-                curNode = next;
-            } else {
-                preNode.next = curNode;
-                curNode = next;
-            }*/
         }
         return head;
     }
