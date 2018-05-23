@@ -19,6 +19,10 @@ public class No22 {
         }
     }
 
+    /**
+     *  n1 指针先走 k-1 步, 然后 n1, n2 一起走, 当 n1 走到链表末端的时候, n2 所在
+     *  位置即为倒数第 k 个位置
+     */
     public ListNode FindKthToTail(ListNode head,int k) {
         if (head == null || k <= 0) {
             return null;
