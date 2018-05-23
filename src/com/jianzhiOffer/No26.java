@@ -7,6 +7,9 @@ package com.jianzhiOffer;
  */
 public class No26 {
 
+    /**
+     * 注意: 原书的 val 是 double 类型, 牛客网的 OJ 是 int 类型
+     */
     public class TreeNode {
         int val = 0;
         TreeNode left = null;
