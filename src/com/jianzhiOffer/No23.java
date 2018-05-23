@@ -1,6 +1,8 @@
 package com.jianzhiOffer;
 
 /**
+ * 一个链表中包含环，请找出该链表的环的入口结点。
+ *
  * Created by 林智 on 2018/5/23.
  */
 public class No23 {
