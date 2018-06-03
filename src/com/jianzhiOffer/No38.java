@@ -10,6 +10,8 @@ import java.util.Collections;
  * 输入描述:
  * 输入一个字符串,长度不超过9(可能有字符重复),字符只包括大小写字母。
  *
+ *
+ * 注意: 这其实也是 数学中的全排列 的代码写法
  * Created by 林智 on 2018/5/31.
  */
 public class No38 {
