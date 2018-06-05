@@ -13,6 +13,8 @@ public class No39 {
         if (array == null || array.length == 0) {
             return 0;
         }
+        // j 表示当前的 result 值出现的次数,
+        // 如果当前的 j 值为 0, 则说明 result 应当更新为当前的 数组值
         int j = 1;
         int result = array[0];
         for (int i = 1; i < array.length; i++) {
