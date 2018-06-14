@@ -17,8 +17,11 @@ public class No43 {
             return 1;
         }
         int temp = powerBaseOf10(len - 1);
+        // 第一位数字的值
         int first = n / temp;
+        // 1 在第一位上出现的次数
         int firstNum = first == 1 ? (n % temp) + 1 : temp;
+        // 1 在其他位上出现的次数
         int otherNum = first * powerBaseOf10(len - 2) * (len - 1);
         return firstNum + otherNum + NumberOf1Between1AndN_Solution(n % temp);
     }
