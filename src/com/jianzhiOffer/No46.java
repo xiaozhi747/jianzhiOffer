@@ -31,7 +31,8 @@ public class No46 {
         if (str[index] == '1' && index + 1 < str.length) {
             return getTranslationCount(str, index + 2) + getTranslationCount(str, index + 1);
         }
-        if (str[index] == '2' && (str[index + 1] >= '0' && str[index + 1] <= '6')
+        // 注意: 是从 0 开始翻译为 a 的, 所以最大的索引值为 25, 而不是 26
+        if (str[index] == '2' && (str[index + 1] >= '0' && str[index + 1] <= '5')
                 && index + 1 < str.length) {
             return getTranslationCount(str, index + 2) + getTranslationCount(str, index + 1);
         }
