@@ -68,4 +68,22 @@ public class No50 {
         return '#';
     }
 
+    // 题目二使用数组实现的方法
+    int[] hashtable=new int[256];
+    StringBuffer s=new StringBuffer();
+    public void Insert2(char ch) {
+        s.append(ch);
+        hashtable[ch]++;
+    }
+
+    // 题目二使用数组实现的方法
+    public char FirstAppearingOnce2() {
+        char[] str=s.toString().toCharArray();
+        for(char c:str) {
+            if(hashtable[c]==1) {
+                return c;
+            }
+        }
+        return '#';
+    }
 }
