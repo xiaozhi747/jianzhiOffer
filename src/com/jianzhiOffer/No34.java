@@ -30,6 +30,9 @@ public class No34 {
         return FindPath(root, target, curList, 0);
     }
 
+    /**
+     * 遍历所有可能的情况, 收集这些情况里面符合要求的结果
+     */
     public ArrayList<ArrayList<Integer>> FindPath
             (TreeNode root, int target, ArrayList<Integer> curList,
              int currentSum) {
